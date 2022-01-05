@@ -54,8 +54,9 @@
 		EAA17D922785C1BB009C89E8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EAA17DB22785C1F4009C89E8 /* Model */,
+				EAA17DB12785C1EC009C89E8 /* UI */,
 				EAA17D932785C1BB009C89E8 /* LinkPreviewToyApp.swift */,
-				EAA17D942785C1BB009C89E8 /* ContentView.swift */,
 				EAA17D952785C1BC009C89E8 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +77,21 @@
 				EAA17DA22785C1BC009C89E8 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		EAA17DB12785C1EC009C89E8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EAA17D942785C1BB009C89E8 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EAA17DB22785C1F4009C89E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
