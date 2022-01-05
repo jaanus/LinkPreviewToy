@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var model = Model()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            URLInputView(model: model)
+            
+            switch model.state {
+            case .idle:
+                Text("Enter a URL to see its preview.")
+                    .padding()
+            case .loading:
+                ProgressView("Loading…")
+                    .padding()
+            }
+            
+            Spacer()
+        }
+        .padding()
     }
 }
 
