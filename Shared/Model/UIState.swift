@@ -14,5 +14,5 @@ enum UIState {
     case idle
     
     /// User has input a somewhat valid URL, and loading the preview for it is in progress.
-    case loading
+    case loading(URL)
 }
