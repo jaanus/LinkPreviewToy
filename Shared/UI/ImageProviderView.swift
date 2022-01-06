@@ -21,6 +21,10 @@ struct ImageProviderView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 256, height: 256)
                 .background(Color.gray)
+                .onDrag {
+                    // Can drag out, but this doesn’t let you save… fixme.
+                    viewModel.itemProvider
+                }
             #else
             Image(uiImage: image)
                 .resizable()
