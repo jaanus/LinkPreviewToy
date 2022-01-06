@@ -25,6 +25,9 @@ struct ContentView: View {
                 ProgressView("Loading \(url.absoluteString)…")
                     .padding()
                 
+            default:
+                Text("Not implemented, fixme")
+                
             }
             
             Spacer()
