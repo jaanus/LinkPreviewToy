@@ -16,12 +16,15 @@ struct ContentView: View {
             URLInputView(model: model)
             
             switch model.state {
+                
             case .idle:
                 Text("Enter a URL to see its preview.")
                     .padding()
-            case .loading:
-                ProgressView("Loading…")
+            
+            case .loading(let url):
+                ProgressView("Loading \(url.absoluteString)…")
                     .padding()
+                
             }
             
             Spacer()
