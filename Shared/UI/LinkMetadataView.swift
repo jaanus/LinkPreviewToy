@@ -16,71 +16,74 @@ struct LinkMetadataView: View {
         
         ScrollView {
             
-            VStack(alignment: .leading) {
-                
-                Group {
-                    Text("URL")
-                        .font(.caption)
-                        .bold()
-                        .padding(.top)
-                    Text("\(metadata.url?.absoluteString ?? "unknown")")
-                }
-
-                Group {
-                    Text("Original URL")
-                        .font(.caption)
-                        .bold()
-                        .padding(.top, 4)
-                    Text("\(metadata.originalURL?.absoluteString ?? "unknown")")
-                }
-
-                Group {
-                    Text("Title")
-                        .font(.caption)
-                        .bold()
-                        .padding(.top, 4)
-                    Text("\(metadata.title ?? "none")")
-                }
-
-                Group {
-                    Text("Icon")
-                        .font(.caption)
-                        .bold()
-                        .padding(.top, 4)
-                    if let iconProvider = metadata.iconProvider {
-                        ImageProviderView(viewModel: ItemProviderViewModel(provider: iconProvider))
-                    } else {
-                        Text("No icon")
+            HStack(spacing: 0) {
+                VStack(alignment: .leading) {
+                    
+                    Group {
+                        Text("URL")
+                            .font(.caption)
+                            .bold()
+                            .padding(.top)
+                        Text("\(metadata.url?.absoluteString ?? "unknown")")
                     }
-                }
-                
-                Group {
-                    Text("Image")
-                        .font(.caption)
-                        .bold()
-                        .padding(.top, 4)
-                    if let imageProvider = metadata.imageProvider {
-                        ImageProviderView(viewModel: ItemProviderViewModel(provider: imageProvider))
-                    } else {
-                        Text("No image")
-                    }
-                }
-                
-                Group {
-                    Text("Video")
-                        .font(.caption)
-                        .bold()
-                        .padding(.top, 4)
-                }
-                Text("\(metadata.remoteVideoURL?.absoluteString ?? "No video URL")")
-                     
-                if let videoProvider = metadata.videoProvider {
-                    Text("Has video provider")
-                } else {
-                    Text("No video provider")
-                }
-                
 
+                    Group {
+                        Text("Original URL")
+                            .font(.caption)
+                            .bold()
+                            .padding(.top, 4)
+                        Text("\(metadata.originalURL?.absoluteString ?? "unknown")")
+                    }
+
+                    Group {
+                        Text("Title")
+                            .font(.caption)
+                            .bold()
+                            .padding(.top, 4)
+                        Text("\(metadata.title ?? "none")")
+                    }
+
+                    Group {
+                        Text("Icon")
+                            .font(.caption)
+                            .bold()
+                            .padding(.top, 4)
+                        if let iconProvider = metadata.iconProvider {
+                            ImageProviderView(viewModel: ItemProviderViewModel(provider: iconProvider))
+                        } else {
+                            Text("No icon")
+                        }
+                    }
+                    
+                    Group {
+                        Text("Image")
+                            .font(.caption)
+                            .bold()
+                            .padding(.top, 4)
+                        if let imageProvider = metadata.imageProvider {
+                            ImageProviderView(viewModel: ItemProviderViewModel(provider: imageProvider))
+                        } else {
+                            Text("No image")
+                        }
+                    }
+                    
+                    Group {
+                        Text("Video")
+                            .font(.caption)
+                            .bold()
+                            .padding(.top, 4)
+                    }
+                    Text("\(metadata.remoteVideoURL?.absoluteString ?? "No video URL")")
+                         
+                    if metadata.videoProvider != nil {
+                        Text("Has video provider")
+                    } else {
+                        Text("No video provider")
+                    }
+                    
+                }
+
+                Spacer(minLength: 0)
             }
 
         }
