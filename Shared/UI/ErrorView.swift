@@ -40,6 +40,9 @@ struct ErrorView: View {
             // but the leading edge stays aligned.
             // I can’t think of a simple way to cleanly align both edges.
             // Let me know if there is a good way.
+            // One way to fix the flicker would be to change the UI design
+            // so the error box wouldn’t have a background or border,
+            // and the flicker is not visible on the trailing side.
             Spacer(minLength: 0)
         }
     }
