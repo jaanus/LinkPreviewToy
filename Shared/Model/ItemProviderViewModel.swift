@@ -6,12 +6,14 @@
 //
 
 import Foundation
-import SwiftUI
+import Combine
 import UniformTypeIdentifiers
 
 #if os(macOS)
+import AppKit
 typealias NativeImage = NSImage
 #else
+import UIKit
 typealias NativeImage = UIImage
 #endif
 
