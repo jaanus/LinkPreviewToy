@@ -21,6 +21,8 @@
 		EAA17DBB2785C7DC009C89E8 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17DB92785C7DC009C89E8 /* URL.swift */; };
 		EAA17DBD2785CBAB009C89E8 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17DBC2785CBAB009C89E8 /* UIState.swift */; };
 		EAA17DBE2785CBAB009C89E8 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17DBC2785CBAB009C89E8 /* UIState.swift */; };
+		FADB269D2786E95C00EC7258 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB269C2786E95C00EC7258 /* ErrorView.swift */; };
+		FADB269E2786E95C00EC7258 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB269C2786E95C00EC7258 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		EAA17DB62785C2B4009C89E8 /* URLInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLInputView.swift; sourceTree = "<group>"; };
 		EAA17DB92785C7DC009C89E8 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		EAA17DBC2785CBAB009C89E8 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
+		FADB269C2786E95C00EC7258 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 			children = (
 				EAA17D942785C1BB009C89E8 /* ContentView.swift */,
 				EAA17DB62785C2B4009C89E8 /* URLInputView.swift */,
+				FADB269C2786E95C00EC7258 /* ErrorView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -212,6 +216,7 @@
 				EAA17DB42785C267009C89E8 /* Model.swift in Sources */,
 				EAA17DA52785C1BC009C89E8 /* ContentView.swift in Sources */,
 				EAA17DA32785C1BC009C89E8 /* LinkPreviewToyApp.swift in Sources */,
+				FADB269D2786E95C00EC7258 /* ErrorView.swift in Sources */,
 				EAA17DB72785C2B4009C89E8 /* URLInputView.swift in Sources */,
 				EAA17DBD2785CBAB009C89E8 /* UIState.swift in Sources */,
 			);
@@ -225,6 +230,7 @@
 				EAA17DB52785C267009C89E8 /* Model.swift in Sources */,
 				EAA17DA62785C1BC009C89E8 /* ContentView.swift in Sources */,
 				EAA17DA42785C1BC009C89E8 /* LinkPreviewToyApp.swift in Sources */,
+				FADB269E2786E95C00EC7258 /* ErrorView.swift in Sources */,
 				EAA17DB82785C2B4009C89E8 /* URLInputView.swift in Sources */,
 				EAA17DBE2785CBAB009C89E8 /* UIState.swift in Sources */,
 			);

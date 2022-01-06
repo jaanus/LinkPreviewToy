@@ -16,6 +16,12 @@ class Model: ObservableObject {
     func startLoadingURL(_ url: URL) {
         state = .loading(url)
         LPMetadataProvider().startFetchingMetadata(for: url) { metadata, error in
+            // Callback arrives on the background queue. Change state back on the main queue.
+            DispatchQueue.main.async {
+                if let error = error as? LPError {
+                    self.state = .error(url, error)
+                }
+            }
             print("Fetched. Metadata: \(String(describing: metadata)), error: \(String(describing: error))")
         }
     }

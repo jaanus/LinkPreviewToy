@@ -25,6 +25,9 @@ struct ContentView: View {
                 ProgressView("Loading \(url.absoluteString)…")
                     .padding()
                 
+            case .error(let url, let error):
+                ErrorView(url: url, error: error)
+                
             default:
                 Text("Not implemented, fixme")
                 
