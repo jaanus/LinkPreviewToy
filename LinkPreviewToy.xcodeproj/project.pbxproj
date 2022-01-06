@@ -21,6 +21,10 @@
 		EAA17DBB2785C7DC009C89E8 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17DB92785C7DC009C89E8 /* URL.swift */; };
 		EAA17DBD2785CBAB009C89E8 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17DBC2785CBAB009C89E8 /* UIState.swift */; };
 		EAA17DBE2785CBAB009C89E8 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17DBC2785CBAB009C89E8 /* UIState.swift */; };
+		EADF1E552787236E0096A577 /* ImageProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF1E542787236E0096A577 /* ImageProviderView.swift */; };
+		EADF1E562787236E0096A577 /* ImageProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF1E542787236E0096A577 /* ImageProviderView.swift */; };
+		EADF1E582787247B0096A577 /* ItemProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF1E572787247B0096A577 /* ItemProviderViewModel.swift */; };
+		EADF1E592787247B0096A577 /* ItemProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF1E572787247B0096A577 /* ItemProviderViewModel.swift */; };
 		EAE6F5B62786FEE9006947CA /* LinkMetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F5B52786FEE8006947CA /* LinkMetadataView.swift */; };
 		EAE6F5B72786FEE9006947CA /* LinkMetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F5B52786FEE8006947CA /* LinkMetadataView.swift */; };
 		FADB269D2786E95C00EC7258 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB269C2786E95C00EC7258 /* ErrorView.swift */; };
@@ -38,6 +42,8 @@
 		EAA17DB62785C2B4009C89E8 /* URLInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLInputView.swift; sourceTree = "<group>"; };
 		EAA17DB92785C7DC009C89E8 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		EAA17DBC2785CBAB009C89E8 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
+		EADF1E542787236E0096A577 /* ImageProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderView.swift; sourceTree = "<group>"; };
+		EADF1E572787247B0096A577 /* ItemProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProviderViewModel.swift; sourceTree = "<group>"; };
 		EAE6F5B22786FE47006947CA /* BBCLinkPreview.data */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = BBCLinkPreview.data; sourceTree = "<group>"; };
 		EAE6F5B52786FEE8006947CA /* LinkMetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkMetadataView.swift; sourceTree = "<group>"; };
 		FADB269C2786E95C00EC7258 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 				EAA17DB62785C2B4009C89E8 /* URLInputView.swift */,
 				FADB269C2786E95C00EC7258 /* ErrorView.swift */,
 				EAE6F5B52786FEE8006947CA /* LinkMetadataView.swift */,
+				EADF1E542787236E0096A577 /* ImageProviderView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -116,6 +123,7 @@
 				EAA17DB32785C267009C89E8 /* Model.swift */,
 				EAA17DB92785C7DC009C89E8 /* URL.swift */,
 				EAA17DBC2785CBAB009C89E8 /* UIState.swift */,
+				EADF1E572787247B0096A577 /* ItemProviderViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,7 +236,9 @@
 			files = (
 				EAA17DBA2785C7DC009C89E8 /* URL.swift in Sources */,
 				EAA17DB42785C267009C89E8 /* Model.swift in Sources */,
+				EADF1E552787236E0096A577 /* ImageProviderView.swift in Sources */,
 				EAA17DA52785C1BC009C89E8 /* ContentView.swift in Sources */,
+				EADF1E582787247B0096A577 /* ItemProviderViewModel.swift in Sources */,
 				EAE6F5B62786FEE9006947CA /* LinkMetadataView.swift in Sources */,
 				EAA17DA32785C1BC009C89E8 /* LinkPreviewToyApp.swift in Sources */,
 				FADB269D2786E95C00EC7258 /* ErrorView.swift in Sources */,
@@ -243,7 +253,9 @@
 			files = (
 				EAA17DBB2785C7DC009C89E8 /* URL.swift in Sources */,
 				EAA17DB52785C267009C89E8 /* Model.swift in Sources */,
+				EADF1E562787236E0096A577 /* ImageProviderView.swift in Sources */,
 				EAA17DA62785C1BC009C89E8 /* ContentView.swift in Sources */,
+				EADF1E592787247B0096A577 /* ItemProviderViewModel.swift in Sources */,
 				EAE6F5B72786FEE9006947CA /* LinkMetadataView.swift in Sources */,
 				EAA17DA42785C1BC009C89E8 /* LinkPreviewToyApp.swift in Sources */,
 				FADB269E2786E95C00EC7258 /* ErrorView.swift in Sources */,

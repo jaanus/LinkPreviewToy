@@ -25,11 +25,11 @@ struct ContentView: View {
                 ProgressView("Loading \(url.absoluteString)…")
                     .padding()
                 
+            case .loaded(let metadata):
+                LinkMetadataView(metadata: metadata)
+                
             case .error(let url, let error):
                 ErrorView(url: url, error: error)
-                
-            default:
-                Text("Not implemented, fixme")
                 
             }
             

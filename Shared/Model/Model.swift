@@ -21,6 +21,10 @@ class Model: ObservableObject {
                 if let error = error as? LPError {
                     self.state = .error(url, error)
                 }
+                
+                if let metadata = metadata {
+                    self.state = .loaded(metadata)
+                }
             }
             print("Fetched. Metadata: \(String(describing: metadata)), error: \(String(describing: error))")
         }
