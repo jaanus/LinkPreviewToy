@@ -45,5 +45,6 @@ struct ImageProviderView_Previews: PreviewProvider {
         let metadata = try! NSKeyedUnarchiver.unarchivedObject(ofClass: LPLinkMetadata.self, from: previewData)!
         
         ImageProviderView(viewModel: ItemProviderViewModel(provider: metadata.imageProvider!))
+            .frame(width: 512, height: 512)
     }
 }
