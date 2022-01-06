@@ -11,7 +11,7 @@ struct URLInputView: View {
     
     let model: Model
     
-    @State private var urlString: String = ""
+    @State private var urlString: String = "https://example.com"
     
     var body: some View {
         HStack {
