@@ -14,10 +14,33 @@ struct ErrorView: View {
     let error: LPError
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Error loading preview for \(url.absoluteString)")
-                .font(.caption)
-            Text(String(describing: error))
+        HStack(spacing: 0) {
+            
+            VStack(alignment: .leading) {
+                Text("Error loading preview for \(url.absoluteString):")
+                    .font(.caption)
+                    .foregroundColor(.red)
+                    .padding(.top)
+                
+                ScrollView {
+                    Text(String(describing: error))
+                        .font(.system(.body, design: .monospaced))
+                        .textSelection(.enabled)
+                        .padding(4)
+                }
+                .cornerRadius(4)
+                .overlay(RoundedRectangle(cornerRadius: 4)
+                                .stroke(Color.gray, lineWidth: 1))
+            }
+            
+            // The aim of HStack with trailing spacer is to make the leading edge
+            // of the VStack to not flicker when resizing macOS window.
+            // With this approach, you still see the flicker on the
+            // trailing edge, when resizing macOS window,
+            // but the leading edge stays aligned.
+            // I can’t think of a simple way to cleanly align both edges.
+            // Let me know if there is a good way.
+            Spacer(minLength: 0)
         }
     }
 }
