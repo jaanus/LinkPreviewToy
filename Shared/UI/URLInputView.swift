@@ -21,13 +21,17 @@ struct URLInputView: View {
             Button("Go") {
                 startLoadingPreview()
             }
-            .disabled(URL.loadableURLForString(urlString) == nil)
+            .disabled(!enteredURLIsLoadable)
         }
     }
     
     private func startLoadingPreview() {
         guard let url = URL.loadableURLForString(urlString) else { return }
         model.startLoadingURL(url)
+    }
+    
+    private var enteredURLIsLoadable: Bool {
+        return URL.loadableURLForString(urlString) != nil
     }
     
 }
