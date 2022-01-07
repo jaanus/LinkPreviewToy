@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-#if DEBUG
-import LinkPresentation
-#endif
-
 struct ContentView: View {
     
     @StateObject var model = Model()
@@ -44,6 +40,7 @@ struct ContentView: View {
 }
 
 #if DEBUG
+import LinkPresentation
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
