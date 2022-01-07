@@ -15,9 +15,11 @@ struct URLInputView: View {
     
     var body: some View {
         HStack {
-            TextField("URL to preview", text: $urlString, onCommit: {
-                startLoadingPreview()
-            })
+            TextField("URL to preview", text: $urlString)
+                .onSubmit {
+                    startLoadingPreview()
+                }
+            
             Button("Go") {
                 startLoadingPreview()
             }
