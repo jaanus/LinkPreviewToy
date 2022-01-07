@@ -19,13 +19,13 @@ struct ImageProviderView: View {
             Image(nsImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 256, height: 256)
+                .frame(maxWidth: 256, maxHeight: 256)
                 .background(Color.gray)
             #else
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 256, height: 256)
+                .frame(maxWidth: 256, maxHeight: 256)
                 .background(Color.gray)
             #endif
         } else {

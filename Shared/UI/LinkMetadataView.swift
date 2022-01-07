@@ -45,29 +45,33 @@ struct LinkMetadataView: View {
                         Text("\(metadata.title ?? "none")")
                     }
 
-                    Group {
-                        Text("Icon")
-                            .font(.caption)
-                            .bold()
-                            .padding(.top, 4)
-                        if let iconProvider = metadata.iconProvider {
-                            ImageProviderView(viewModel: ItemProviderViewModel(provider: iconProvider))
-                        } else {
-                            Text("No icon")
+                    HStack {
+
+                        VStack(alignment: .leading) {
+                            Text("Icon")
+                                .font(.caption)
+                                .bold()
+                                .padding(.top, 4)
+                            if let iconProvider = metadata.iconProvider {
+                                ImageProviderView(viewModel: ItemProviderViewModel(provider: iconProvider))
+                            } else {
+                                Text("No icon")
+                            }
+                        }
+
+                        VStack(alignment: .leading) {
+                            Text("Image")
+                                .font(.caption)
+                                .bold()
+                                .padding(.top, 4)
+                            if let imageProvider = metadata.imageProvider {
+                                ImageProviderView(viewModel: ItemProviderViewModel(provider: imageProvider))
+                            } else {
+                                Text("No image")
+                            }
                         }
                     }
                     
-                    Group {
-                        Text("Image")
-                            .font(.caption)
-                            .bold()
-                            .padding(.top, 4)
-                        if let imageProvider = metadata.imageProvider {
-                            ImageProviderView(viewModel: ItemProviderViewModel(provider: imageProvider))
-                        } else {
-                            Text("No image")
-                        }
-                    }
                     
                     Group {
                         Text("Video")
