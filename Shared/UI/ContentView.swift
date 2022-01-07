@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+#if DEBUG
+import LinkPresentation
+#endif
+
 struct ContentView: View {
     
     @StateObject var model = Model()
@@ -41,6 +45,17 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        
+        let url = URL(string: "https://www.bbc.com/future/article/20220105-what-existed-before-the-big-bang")!
+        let previewData = try! Data(contentsOf: Bundle.main.url(forResource: "BBCLinkPreview", withExtension: "data")!)
+        let metadata = try! NSKeyedUnarchiver.unarchivedObject(ofClass: LPLinkMetadata.self, from: previewData)!
+        let error = LPError(.metadataFetchFailed, userInfo: [:])
+        
+        return Group {
+            ContentView(model: Model(testState: .idle))
+            ContentView(model: Model(testState: .loading(url)))
+            ContentView(model: Model(testState: .loaded(metadata)))
+            ContentView(model: Model(testState: .error(url, error)))
+        }
     }
 }

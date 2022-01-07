@@ -13,6 +13,15 @@ class Model: ObservableObject {
     
     @Published private(set) var state = UIState.idle
         
+    init() { }
+    
+    #if DEBUG
+    /// Initializer for SwiftUI previews, can set any arbitrary state.
+    init(testState: UIState) {
+        state = testState
+    }
+    #endif
+    
     func startLoadingURL(_ url: URL) {
         state = .loading(url)
         LPMetadataProvider().startFetchingMetadata(for: url) { metadata, error in
