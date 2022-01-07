@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA6DDE132788D35C000F1608 /* LPLinkViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6DDE122788D35C000F1608 /* LPLinkViewView.swift */; };
+		EA6DDE152788D428000F1608 /* LPLinkViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6DDE142788D428000F1608 /* LPLinkViewView.swift */; };
 		EAA17DA32785C1BC009C89E8 /* LinkPreviewToyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17D932785C1BB009C89E8 /* LinkPreviewToyApp.swift */; };
 		EAA17DA42785C1BC009C89E8 /* LinkPreviewToyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17D932785C1BB009C89E8 /* LinkPreviewToyApp.swift */; };
 		EAA17DA52785C1BC009C89E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA17D942785C1BB009C89E8 /* ContentView.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA6DDE122788D35C000F1608 /* LPLinkViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPLinkViewView.swift; sourceTree = "<group>"; };
+		EA6DDE142788D428000F1608 /* LPLinkViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPLinkViewView.swift; sourceTree = "<group>"; };
 		EAA17D932785C1BB009C89E8 /* LinkPreviewToyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPreviewToyApp.swift; sourceTree = "<group>"; };
 		EAA17D942785C1BB009C89E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAA17D952785C1BC009C89E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA6DDE102788D33D000F1608 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA6DDE122788D35C000F1608 /* LPLinkViewView.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		EA6DDE112788D342000F1608 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA6DDE142788D428000F1608 /* LPLinkViewView.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		EAA17D8D2785C1BB009C89E8 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +128,8 @@
 		EAA17DB12785C1EC009C89E8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EA6DDE112788D342000F1608 /* iOS */,
+				EA6DDE102788D33D000F1608 /* macOS */,
 				EAA17D942785C1BB009C89E8 /* ContentView.swift */,
 				EAA17DB62785C2B4009C89E8 /* URLInputView.swift */,
 				FADB269C2786E95C00EC7258 /* ErrorView.swift */,
@@ -240,6 +262,7 @@
 				EAA17DA52785C1BC009C89E8 /* ContentView.swift in Sources */,
 				EADF1E582787247B0096A577 /* ItemProviderViewModel.swift in Sources */,
 				EAE6F5B62786FEE9006947CA /* LinkMetadataView.swift in Sources */,
+				EA6DDE152788D428000F1608 /* LPLinkViewView.swift in Sources */,
 				EAA17DA32785C1BC009C89E8 /* LinkPreviewToyApp.swift in Sources */,
 				FADB269D2786E95C00EC7258 /* ErrorView.swift in Sources */,
 				EAA17DB72785C2B4009C89E8 /* URLInputView.swift in Sources */,
@@ -257,6 +280,7 @@
 				EAA17DA62785C1BC009C89E8 /* ContentView.swift in Sources */,
 				EADF1E592787247B0096A577 /* ItemProviderViewModel.swift in Sources */,
 				EAE6F5B72786FEE9006947CA /* LinkMetadataView.swift in Sources */,
+				EA6DDE132788D35C000F1608 /* LPLinkViewView.swift in Sources */,
 				EAA17DA42785C1BC009C89E8 /* LinkPreviewToyApp.swift in Sources */,
 				FADB269E2786E95C00EC7258 /* ErrorView.swift in Sources */,
 				EAA17DB82785C2B4009C89E8 /* URLInputView.swift in Sources */,

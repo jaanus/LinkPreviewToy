@@ -26,7 +26,6 @@ class Model: ObservableObject {
                     self.state = .loaded(metadata)
                 }
             }
-            print("Fetched. Metadata: \(String(describing: metadata)), error: \(String(describing: error))")
         }
     }
 }

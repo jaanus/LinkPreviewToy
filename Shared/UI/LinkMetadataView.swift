@@ -12,6 +12,8 @@ struct LinkMetadataView: View {
     
     let metadata: LPLinkMetadata
     
+    @State private var showPreview = false
+    
     var body: some View {
         
         ScrollView {
@@ -79,6 +81,14 @@ struct LinkMetadataView: View {
                         Text("Has video provider")
                     } else {
                         Text("No video provider")
+                    }
+                    
+                    if showPreview {
+                        LPLinkViewView(metadata: metadata)
+                    } else {
+                        Button("Show preview") {
+                            showPreview = true
+                        }
                     }
                     
                 }
